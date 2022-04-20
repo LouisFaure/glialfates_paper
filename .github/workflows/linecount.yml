@@ -1,0 +1,26 @@
+on:
+  push:
+    paths:
+      - '*.ipynb'
+name: Count Lines
+
+
+jobs:
+  linecount_job:
+    runs-on: ubuntu-latest
+    name: Count jupyter notebooks
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Count lines
+        run: |
+          mkdir -p output
+          export counts=$(jq '.cells[] | select(.cell_type == "code") .source[]' *.ipynb | grep -v '"\\n"' | wc -l)
+          if (($counts > 1100)); then echo $(bc <<< "scale=1;$counts/1000")K; else echo $counts; fi | xargs -I{} wget https://img.shields.io/badge/Lines%20of%20Code-{}-blue -O output/badge.svg
+      - name: Deploy to linecount branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: ./output
+          publish_branch: linecount
+          github_token: ${{ secrets.GITHUB_TOKEN }}

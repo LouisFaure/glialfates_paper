@@ -1,7 +1,7 @@
 on:
   push:
     paths:
-      - '*.ipynb'
+      - '*/*.ipynb'
 name: Count Lines
 
 

@@ -1,6 +1,6 @@
 # Melanoma analysis
 
-## getting raw data
+## getting processed data
 
 ```bash
 while read g; do

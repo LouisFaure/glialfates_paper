@@ -14,4 +14,4 @@ It is highly recommended to work on `linux`, with `mamba` in order to create ded
 
 ## Hardware used for this analysis
 * HPC system with 88 cores and 1 To of RAM
-* RTX8000 nvidia GPU
+* RTX8000 nvidia GPU (used in SS2 velocity and tree analysis, Neuroblastoma preprocessing & RNAscope segmentation)

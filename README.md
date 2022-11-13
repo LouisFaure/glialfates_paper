@@ -6,7 +6,11 @@
 
 ## Cite this paper
 
-The information for citing this paper will be out once published!
+```
+Kastriti, M. E., Faure, L., von Ahsen, D., Bouderlique, T. G., Boström, J., Solovieva, T., Jackson, C., Bronner, M., Meijer, D., Hadjab, S., Lallemend, F., Erickson, A., Kaucka, M., Dyachuk, V., Perlmann, T., Lahti, L., Krivanek, J., Brunet, J., Fried, K.,; Adameyko, I. (2022). 
+Schwann cell precursors represent a neural crest‐like state with biased multipotency. 
+The EMBO Journal, 41(17). https://doi.org/10.15252/embj.2021108780
+```
 
 ## Required software
 

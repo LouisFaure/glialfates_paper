@@ -18,6 +18,8 @@ It is highly recommended to work on `linux`, with `mamba` in order to create ded
 
 ## Obtain complete cell annotation
 
+The complete assignment of all cell types/states combines the result of three analysis: (1) cell assignment to known cell type using canonical marker scoring, (2) Hub cell assignment using gene scoring and Leiden clustering and (3) SC subtypes assignment using tree analysis. (1) and (2) analysis code is located [here](https://github.com/LouisFaure/glialfates_paper/blob/main/SS2/03.Cell-type_Assigment.ipynb) and (3) code [here](https://github.com/LouisFaure/glialfates_paper/blob/main/SS2/10.Glial_focus.ipynb).
+
 ```bash
 wget -nv https://ftp.ncbi.nlm.nih.gov/geo/series/GSE201nnn/GSE201257/suppl/GSE201257%5Fadata%5Fassigned%2Eh5ad%2Egz
 wget -nv https://ftp.ncbi.nlm.nih.gov/geo/series/GSE201nnn/GSE201257/suppl/GSE201257%5Fadata%5Fglia%5Ffocus%2Eh5ad%2Egz

@@ -74,7 +74,7 @@ celltypes.append("Hub")
 
 palette=[cols[a] for a in adata.obs.assignments.cat.categories]
 sc.pl.umap(adata,color="assignments",palette=palette)
-adata.obs[["assignments"]].to_csv("assignemnts.csv")
+adata.obs[["assignments"]].to_csv("assignments.csv")
 ```
 
 
